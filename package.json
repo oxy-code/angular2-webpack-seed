@@ -1,0 +1,46 @@
+{
+  "name": "angular2-webpack-seed",
+  "version": "1.0.0",
+  "description": "Simple seed project which encapsulates Angular2 and webback build scripts",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --progress",
+    "build:prod": "cross-env APP_ENVIRONMENT=production webpack -p --progress",
+    "postinstall": "typings install",
+    "serve": "webpack-dev-server --inline --port=3000 --progress"
+  },
+  "keywords": [
+    "angular2",
+    "webpack-angular2",
+    "angular2-webpack",
+    "angular2-seed-webpack",
+    "angular2-webpack-seed"
+  ],
+  "dependencies": {
+    "@angular/common": "~2.1.0",
+    "@angular/compiler": "~2.1.0",
+    "@angular/core": "~2.1.0",
+    "@angular/forms": "~2.1.0",
+    "@angular/http": "~2.1.0",
+    "@angular/platform-browser": "~2.1.0",
+    "@angular/platform-browser-dynamic": "~2.1.0",
+    "@angular/router": "~3.1.0",
+    "core-js": "^2.4.1",
+    "reflect-metadata": "^0.1.8",
+    "rxjs": "5.0.0-beta.12",
+    "zone.js": "^0.6.25"
+  },
+  "devDependencies": {
+    "angular2-template-loader": "^0.5.0",
+    "cross-env": "~3.1.3",
+    "html-webpack-plugin": "~2.22.0",
+    "raw-loader": "~0.5.1",
+    "ts-loader": "~0.8.2",
+    "typescript": "^2.0.3",
+    "typings": "^1.4.0",
+    "webpack": "~1.13.2",
+    "webpack-dev-server": "~1.16.2"
+  },
+  "author": "Velu <velu_developer@yahoo.com>",
+  "license": "MIT"
+}

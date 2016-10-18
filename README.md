@@ -5,10 +5,10 @@ The simple scaffolded seed for your angular2 development and the build systems w
 
 <table>
   <tr>
-    <td><img src='https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg'/></td>
-    <td><img src='https://github.com/npm/logos/raw/master/%22npm%22%20lockup/npm.png'/></td>
+    <td><img src='https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg' width='100'/></td>
+    <td><img src='https://github.com/npm/logos/raw/master/%22npm%22%20lockup/npm.png' width='100'/></td>
   </tr>
-</table>
+<table>
 
 # Setup and execute commands
 

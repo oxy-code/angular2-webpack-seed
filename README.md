@@ -12,6 +12,6 @@ The simple scaffolded seed for your angular2 development and the build systems w
 
 # Setup and execute commands
 
-* Run `npm install` inside the project folder to download all the dependencies. This only needs to be done once.
+* Run `npm install` to download all the dependencies and this needs to be done only once.
 * Run `npm run serve` to start a local development web server. You can now access the application at [localhost:3000](http://localhost:3000/).
 * Run `npm run build` to bundle everything into the `dist` folder for deployment; use `npm run build:prod` for a production build.

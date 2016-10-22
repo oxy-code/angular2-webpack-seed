@@ -20,7 +20,8 @@ module.exports = {
 			{test: /\.component.ts$/, loader: 'ts!angular2-template'},
 			{test: /\.ts$/, exclude: /\.component.ts$/, loader: 'ts'},
 			{test: /\.html$/, loader: 'raw'},
-			{test: /\.css$/, loader: 'raw'}
+      		{test: /\.css$/, loader: 'raw' },
+      		{test: /.(png|woff(2)?|eot|ttf|svg)(\?[a-z0-9=\.]+)?$/, loader: 'url-loader?limit=100000' },
 		]
 	},
 	resolve: {
@@ -37,6 +38,12 @@ module.exports = {
 			app: {
 				environment: JSON.stringify(process.env.APP_ENVIRONMENT || 'development')
 			}
+		}),
+		new webpack.ProvidePlugin({
+			$: "jquery",
+			jQuery: "jquery",
+			"window.jQuery": "jquery",
+			Hammer: "hammerjs/hammer"
 		})
 	]
 	

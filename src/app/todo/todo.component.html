@@ -1,0 +1,15 @@
+<div class="todo-container z-depth-2">
+	<ul>
+		<li *ngFor="let item of items">
+			<p class="item">
+				<input type="checkbox" [attr.id]="'item'+ item.id" (change)="toggleCheck(item.id)"/>
+      			<label [attr.for]="'item'+ item.id" [ngClass]="{'strike': checkedItems.indexOf(item.id) > -1}">{{item.name}}</label>
+      			<a class="right btn-floating blue-grey remove" (click)="removeItem(item)"><i class="material-icons">delete</i></a>
+			</p>
+		</li>
+	</ul>
+	<div>
+		<input type="text" placeholder="new task" #task/>
+		<a class="waves-effect waves-light btn" (click)="addItem(task.value);task.value=''"><i class="material-icons left">add</i>Task</a>
+	</div>
+</div>

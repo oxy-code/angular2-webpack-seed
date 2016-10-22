@@ -1,0 +1,21 @@
+:host .todo-container{
+	background-color: #f5f2f0;
+	padding: 20px;
+	width: 450px;
+}
+:host .strike{
+	text-decoration: line-through;
+}
+:host ul li p.item label{
+	color:#006064;
+}
+:host ul li p.item a.remove{
+	width: 27px;
+	height: 27px;
+	line-height: 27px;
+	border-radius: 0;
+}
+:host ul li p.item a.remove i.material-icons{
+	line-height: 27px;
+	font-size: 1.2em;
+}

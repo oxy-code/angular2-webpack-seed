@@ -1,3 +1,5 @@
-h1 {
-  color: #cc0000;
+todo-app{
+	display: flex;
+    justify-content: center;
+    margin-top: 85px;
 }
